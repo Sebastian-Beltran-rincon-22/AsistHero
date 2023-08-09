@@ -1,6 +1,14 @@
-<p>home works!</p>
-<h1>holi</h1>
-<h2>HEROS</h2>
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      SuperHero Asistencia
+    </a>
+  </div>
+</nav>
 
-<h1>holi</h1>
-<h2>My Heroes</h2>
+<div *ngFor="let Item of Item.allHero">
+  {{Item.title}}
+  <app-card [title]="Item.title" [content]="Item.done"></app-card>
+<div>
+
+
