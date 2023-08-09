@@ -49,12 +49,12 @@ export class AppComponent {
     })
   }
   //GerForID
-  get items(){
-    if (this.done === "true"){
-      return this.allHero.filter((item:Item)=> item.done === true)
-    }
-    return this.allHero.filter((item:Item) => item.done === false)
-  }
+  // get items(){
+  //   if (this.done === "true"){
+  //     return this.allHero.filter((item:Item)=> item.done === true)
+  //   }
+  //   return this.allHero.filter((item:Item) => item.done === false)
+  // }
 
   updateHero(title: string, img: string, id: Number):void{
     const updateTask = {
