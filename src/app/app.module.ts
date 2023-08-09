@@ -12,7 +12,7 @@ import { CoreModule } from './core/core.module';
   declarations: [
     AppComponent,
     LoaderComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     BrowserModule,
