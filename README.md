@@ -1,27 +1,71 @@
 # AsistHero
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+En este proyecto se realizo en un Hero-Attendance-Api que contiene una base de datos para guardar las personas que han asistido y quien guardado en el Back-End, puedes visualizar el despliegue 
+<a href="Otro despliegue">aqui</a>
 
-## Development server
+El proyecto fue creado con [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Version Oficial V1.0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Se implemento una Cards en su primera version para Para visualizar la asistencias
+- Se implemento una Modal para agregar diferente datos como: Se visualiza el ID,Nombre de SuperHeroes,Imagenes de SuperHeroes,Asistencia con una ChackBox
+- Se implemento un Loader para mostrar mientras se efectuan los fetching de datos.
 
-## Running unit tests
+## Tecnologias Usadas
+- NodeJs
+- TypeScript
+- Angular CLI
+- Bootstrap
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalacion
 
-## Running end-to-end tests
+1 Clona el repositorio en tu maquina local
+bash
+$ git clone git@github.com:Sebastian-Beltran-rincon-22/AsistHero.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2 Navega en el directorio del proyecto 
+bash
+$ cd AsistHero
 
-## Further help
+3 Puedes cambiar el origen del proyecto con los siguientes comando
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+bash
+$ git remote -v
+$ git remote remove origin
+$ git remote add origin <nueva_url_del_repositorio>
+
+4 Instalar las dependecias necesarias
+- Recuerda tener el package.json y el package-lock.json en el root de la carpeta y ejecutas
+
+bash
+$ npm i
+
+## Referencia
+
+- Puedes ver la estructura del Back-End clickeando <a href="https://github.com/Sebastian-Beltran-rincon-22/ApiSuperHero">aqui</a>
+
+
+## Uso
+
+1 Inicia la app con 
+bash
+$ ng s -o
+
+2 Puedes acceder a ella desde el puerto configurado:
+
+http://localhost:4200
+
+3 Prueba las diferentes Funcionalidades de la pagina 
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarrollar este proyecto, no dudes en contactarme en [sebastianrincon834@gmail.com](sebastianrincon834@gmail.com).
+
+
+## Autors
+
+- [@Sebastian Beltran](https://github.com/Sebastian-Beltran-rincon-22)
