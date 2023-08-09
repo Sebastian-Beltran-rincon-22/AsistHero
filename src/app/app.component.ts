@@ -48,13 +48,13 @@ export class AppComponent {
       console.log(data)
     })
   }
-  //GerForID
-  // get items(){
-  //   if (this.done === "true"){
-  //     return this.allHero.filter((item:Item)=> item.done === true)
-  //   }
-  //   return this.allHero.filter((item:Item) => item.done === false)
-  // }
+//GetForID
+  get items(){
+    if (this.done === "true"){
+      return this.allHero.filter((item:Item)=> item.done === true)
+    }
+    return this.allHero.filter((item:Item) => item.done === false)
+  }
 
   updateHero(title: string, img: string, id: Number):void{
     const updateTask = {
