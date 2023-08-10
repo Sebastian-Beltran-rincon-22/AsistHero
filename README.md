@@ -7,7 +7,7 @@ El proyecto fue creado con [Angular CLI](https://github.com/angular/angular-cli)
 
 
 ## Version Oficial V1.0
-
+![image](https://github.com/Sebastian-Beltran-rincon-22/AsistHero/assets/132385582/7b5ff2b6-f0e1-4a00-b386-99eecf66e287)
 
 ## Funcionalidades
 
