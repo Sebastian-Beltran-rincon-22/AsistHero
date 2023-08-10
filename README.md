@@ -9,6 +9,10 @@ El proyecto fue creado con [Angular CLI](https://github.com/angular/angular-cli)
 ## Version Oficial V1.0
 ![image](https://github.com/Sebastian-Beltran-rincon-22/AsistHero/assets/132385582/7b5ff2b6-f0e1-4a00-b386-99eecf66e287)
 
+##Estructura de carpetas 
+![image](https://github.com/Sebastian-Beltran-rincon-22/AsistHero/assets/132385582/3324dbc3-b238-4adf-a6e2-511a7dca4236)
+
+
 ## Funcionalidades
 
 - Se implemento una Cards en su primera version para Para visualizar la asistencias
