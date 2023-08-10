@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-4 header mx-auto">
+  <a class="navbar-brand" href="#">SuperHero Asistencia</a>
+  <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"><i class="fa-solid fa-plus" style="color: #198754;"></i> New hero</button>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Hero</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" data-bs-theme="dark">
+        <div class="mb-3">
+          <label for="Hero-name" class="form-label">Hero Name</label>
+          <input #heroname type="text" class="form-control" id="Hero-name" placeholder="Hero name here">
+        </div>
+        <div class="mb-3">
+          <label for="Hero-Link" class="form-label">hero Img [URL]</label>
+          <textarea #herourl class="form-control" id="Hero-Link" rows="3" placeholder="image link here..."></textarea>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary cancel" data-bs-dismiss="modal">CANCEL</button>
+        <button type="button" class="btn btn-primary create" data-bs-dismiss="modal" (click)="createHero(heroname.value, herourl.value)">CREATE HERO</button>
+      </div>
+    </div>
+  </div>
+</div>
