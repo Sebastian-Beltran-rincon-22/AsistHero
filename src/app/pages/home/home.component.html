@@ -1,14 +1,45 @@
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      SuperHero Asistencia
-    </a>
+<app-header (newHeroCreated)="onNewHeroCreated($event)" class="bg-dark border-bottom border-body" data-bs-theme="dark"></app-header>
+
+<div class="cardFor">
+  <div *ngFor="let Item of allHero">
+    {{Item.title}}
+    <app-card [Item]="Item"></app-card>
+
+    <div class="manual-buts d-flex justify-content-center">
+      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#updateModal">
+        <i class="far fa-edit" style="color: #ffffff;;">:</i>
+      </button>
+      <input type="checkbox" name="" id="checkbox" [checked]="Item.done" (click)="toggleItemDone(Item)">
+      <button type="button" (click)="deleteHero(Item)">
+        <i class="fa-regular fa-trash-can" style="color: #ffffff;">:</i>
+      </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Update a hero</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" data-bs-theme="dark">
+            <div class="mb-3">
+              <label for="Hero-name" class="form-label">Hero Name</label>
+              <input #heroname type="text" class="form-control" id="Hero-name" placeholder="Hero name here">
+            </div>
+            <div class="mb-3">
+              <label for="Hero-Link" class="form-label">hero Img [URL]</label>
+              <textarea #herourl class="form-control" id="Hero-Link" rows="3" placeholder="image link here..."></textarea>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary cancel" data-bs-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-primary create" data-bs-dismiss="modal" (click)="updateHero(heroname.value, herourl.value, Item.heroId)">UPDATE HERO</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
-</nav>
-
-<div *ngFor="let Item of Item.allHero">
-  {{Item.title}}
-  <app-card [title]="Item.title" [content]="Item.done"></app-card>
-<div>
-
-
+</div>
