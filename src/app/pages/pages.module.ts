@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './home/card/card.component';
+import { CoreModule } from '../core/core.module';
 
 
 
@@ -11,7 +12,8 @@ import { CardComponent } from './card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CoreModule
   ]
 })
 export class PagesModule { }
